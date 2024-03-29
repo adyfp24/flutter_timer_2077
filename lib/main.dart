@@ -36,7 +36,7 @@ class TimerApp extends StatelessWidget {
     return MaterialApp(
       title: 'Timer App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.cyan,
       ),
       home: TimerPage(),
     );
@@ -103,7 +103,7 @@ class _TimerPageState extends State<TimerPage> {
             Text(
               'Nama: Ady Firdaus Pratama',
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 30),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 30),
               child: TextField(
@@ -116,7 +116,7 @@ class _TimerPageState extends State<TimerPage> {
               ),
             ),
             
-            SizedBox(height: 20),
+            SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -149,10 +149,10 @@ class _TimerPageState extends State<TimerPage> {
                 ),
               ],
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 30),
             Text(
               'Sisa waktu: ${(_timeLeft ~/ 60).toString().padLeft(2, '0')}:${(_timeLeft % 60).toString().padLeft(2, '0')}',
-              style: TextStyle(fontSize: 24),
+              style: TextStyle(fontSize: 26,),
             ),
           ],
         ),
